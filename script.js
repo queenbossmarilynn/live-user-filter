@@ -10,7 +10,8 @@ filter.addEventListener("input", (e) => filterData(e.target.value));
 
 
 async function getData() {
-    // Represents the fetch responce where we're getting the data from 
+    // Represents the fetch response where we're getting the data from 
+    // API used: https://randomuser.me/
     const res = await fetch("https://randomuser.me/api?results=50");
     
     // To get the data
